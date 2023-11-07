@@ -1,4 +1,5 @@
-import { Story, Meta } from '@storybook/react';
+// src/components/Warning/Warning.stories.tsx
+import { StoryFn, Meta } from '@storybook/react';
 import Warning from '.';
 import { WarningProps } from './Warning.types';
 
@@ -6,28 +7,29 @@ export default {
     title: 'Components/Warning',
     component: Warning,
     argTypes: {
+        text: { control: 'text' },
         variant: {
             control: { type: 'select', options: ['success', 'warning', 'error'] },
         },
     },
 } as Meta;
 
-const Template: Story<WarningProps> = (args) => <Warning {...args} />;
+const Template: StoryFn<WarningProps> = (args) => <Warning {...args} />;
 
 export const Success = Template.bind({});
 Success.args = {
-    text: 'Operação realizada com sucesso!',
+    text: 'This is a success message!',
     variant: 'success',
 };
 
 export const WarningStory = Template.bind({});
 WarningStory.args = {
-    text: 'Atenção: Verifique os dados inseridos.',
+    text: 'This is a warning message!',
     variant: 'warning',
 };
 
 export const Error = Template.bind({});
 Error.args = {
-    text: 'Erro: Não foi possível processar a sua solicitação.',
+    text: 'This is an error message!',
     variant: 'error',
 };
