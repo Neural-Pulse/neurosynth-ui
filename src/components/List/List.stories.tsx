@@ -22,6 +22,6 @@ export const WithClickAction = Template.bind({});
 WithClickAction.args = {
     ...Default.args,
     onItemClick: (item: any) => {
-        alert(item); // Substituído por um alert para exemplo visual
+        alert(item);
     },
 };
