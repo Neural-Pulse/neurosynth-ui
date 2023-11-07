@@ -2,16 +2,16 @@ import React from 'react';
 import { WarningProps } from './Warning.types';
 
 const variantStyles = {
-    success: 'shadow-success',
-    warning: 'shadow-warning',
-    error: 'shadow-error',
+    success: 'shadow-success-glow',
+    warning: 'shadow-warning-glow',
+    error: 'shadow-error-glow',
 };
 
 const Warning: React.FC<WarningProps> = ({ text, variant }) => {
     const variantClass = variantStyles[variant] || variantStyles.warning;
 
     return (
-        <div className={`bg-white text-dark-blue font-bold p-2 rounded-x1 ${variantClass}`}>
+        <div className={`bg-white text-neuralpulse-dark font-bold p-2 rounded-sm ${variantClass}`}>
             {text}
         </div>
     );

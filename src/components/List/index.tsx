@@ -7,7 +7,7 @@ const List: React.FC<ListProps> = ({ items, onItemClick }) => {
             {items.map((item, index) => (
                 <li
                     key={index}
-                    className="cursor-pointer px-3 py-2 hover:bg-light-gray text-dark-blue rounded-xl shadow-neon-md"
+                    className="cursor-pointer px-3 py-2 hover:bg-neuralpulse-gray text-neuralpulse-dark rounded-xl shadow-green-glow-md"
                     onClick={() => onItemClick?.(item)}
                 >
                     {item}

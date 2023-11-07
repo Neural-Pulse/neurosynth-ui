@@ -21,17 +21,17 @@ const IssueCard: React.FC<IssueCardProps> = ({
 }) => {
     const IssueIcon = issueTypeIcons[type] || null;
     return (
-        <div className={`p-4 max-w-sm bg-white rounded-xl shadow-neon-md border-l-4 ${statusColor}`}>
+        <div className={`p-4 max-w-sm bg-neuralpulse-light-gray rounded-xl shadow-green-glow-md border-l-4 ${statusColor}`}>
             <div className="flex items-center mb-2">
-                {IssueIcon && <IssueIcon className="text-xl mr-2" />} {/* Renderiza o ícone se existir */}
-                <h2 className="font-bold text-dark-blue text-xl">{title}</h2>
+                {IssueIcon && <IssueIcon className="text-xl mr-2 text-neuralpulse-accent" />} {/* Renderiza o ícone se existir */}
+                <h2 className="font-bold text-neuralpulse-dark text-xl">{title}</h2>
             </div>
-            <p className="text-dark-gray mb-4">{description}</p>
+            <p className="text-neuralpulse-dark mb-4">{description}</p>
             <div className="flex justify-between items-center">
                 <span className={`inline-block px-3 py-1 text-sm font-semibold ${priorityColor} rounded-full`}>
                     {priority}
                 </span>
-                <span className="text-light-gray">{new Date(dueDate).toLocaleDateString()}</span>
+                <span className="text-neuralpulse-dark">{new Date(dueDate).toLocaleDateString()}</span>
             </div>
         </div>
     );

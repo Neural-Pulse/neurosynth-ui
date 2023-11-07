@@ -1,5 +1,5 @@
 export interface ButtonProps {
     label: string;
     onClick: () => void;
-    variant: 'primary' | 'secondary';
+    variant: 'contained' | 'outlined' | 'text';
 }
