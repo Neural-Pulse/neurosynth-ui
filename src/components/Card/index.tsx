@@ -3,9 +3,9 @@ import { CardProps } from './Card.types';
 
 const Card: React.FC<CardProps> = ({ title, text }) => {
     return (
-        <div className="bg-white p-4 rounded-lg shadow-md">
-            <h2 className="text-dark-blue text-lg font-bold">{title}</h2>
-            <p className="text-dark-gray">{text}</p>
+        <div className="bg-white p-4 rounded-ms shadow-soft-green-glow">
+            <h2 className="text-neuralpulse-dark text-lg font-bold">{title}</h2>
+            <p className="text-neuralpulse-accent">{text}</p>
         </div>
     );
 };

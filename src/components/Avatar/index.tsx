@@ -6,7 +6,7 @@ const Avatar: React.FC<AvatarProps> = ({ src, size = 50, name, className }) => {
 
     return (
         <div
-            className={`flex items-center justify-center rounded-full shadow-neon-md text-dark-blue font-semibold ${className}`
+            className={`flex items-center justify-center rounded-full shadow-green-glow-md text-neuralpulse-green font-semibold ${className}`
             }
             style={{
                 width: size,
