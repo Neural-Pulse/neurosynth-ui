@@ -1,5 +1,4 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import List from '.';
 import { ListProps } from './List.types';
 
@@ -11,7 +10,7 @@ export default {
     },
 } as Meta;
 
-const Template: Story<ListProps> = (args) => <List {...args} />;
+const Template: StoryFn<ListProps> = (args) => <List {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
