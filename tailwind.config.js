@@ -22,12 +22,17 @@ module.exports = {
         'error-glow': '0 0 15px rgba(255, 0, 0, 0.5), 0 0 25px rgba(255, 0, 0, 0.3)',
       },
       borderRadius: {
+        'none': '0',
+        'xs': '0.125rem',
+        'sm': '0.25rem',
+        'md': '0.375rem',
+        'lg': '0.5rem',
+        'xl': '0.75rem',
         'xl': '1rem',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-radial-at-tr': 'radial-gradient(ellipse at top right, var(--tw-gradient-stops))',
-        // Adicione mais gradientes radiais personalizados conforme necessário
       },
       backgroundSize: {
         '50': '50%',
