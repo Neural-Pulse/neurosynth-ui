@@ -23,6 +23,7 @@ Default.args = {
     dueDate: '2023-04-30',
     status: 'Aberta',
     statusColor: 'bg-cyan-blue',
+    type: 'Bug',
 };
 
 export const HighPriority = Template.bind({});

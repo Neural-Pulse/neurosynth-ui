@@ -6,4 +6,5 @@ export interface IssueCardProps {
     dueDate: string;
     status: string;
     statusColor: string;
+    type: string;
 }
