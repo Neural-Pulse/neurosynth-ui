@@ -18,6 +18,6 @@ describe('Card', () => {
         render(<Card title={title} text={text} />);
 
         const card = screen.getByText(title).parentElement;
-        expect(card).toHaveClass('bg-white p-4 rounded-lg shadow-md');
+        expect(card).toHaveClass('bg-white p-4 rounded-ms shadow-soft-green-glow');
     });
 });
