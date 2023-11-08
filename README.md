@@ -3,6 +3,7 @@
 </p>
 
 # NeuroSynthUI
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 NeuroSynthUI is a modern React component library designed to provide developers with a set of pre-built components that can be used to create beautiful and functional user interfaces with ease.
 
