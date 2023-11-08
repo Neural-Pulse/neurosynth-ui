@@ -1,4 +1,7 @@
-![Logo](./public/Neuralsynth-UI-logo-git.png)
+<p align="center">
+  <img src="./public/neuralsynth-ui-no-background-readme.png" alt="Logo do seu projeto" width="500"/>
+</p>
+
 # NeuroSynthUI
 
 NeuroSynthUI is a modern React component library designed to provide developers with a set of pre-built components that can be used to create beautiful and functional user interfaces with ease.
