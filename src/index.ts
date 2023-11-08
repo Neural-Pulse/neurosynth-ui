@@ -9,3 +9,5 @@ export { default as NestedList } from './components/NestedList';
 export { default as Collapse } from './components/Collapse';
 export { default as IssueCard } from './components/IssueCard';
 export { default as List } from './components/List';
+export { default as Toolbar } from './components/Toolbar';
+export { default as DropdownMenu } from './components/DropdownMenu';
