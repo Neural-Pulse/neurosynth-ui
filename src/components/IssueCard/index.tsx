@@ -15,15 +15,14 @@ const IssueCard: React.FC<IssueCardProps> = ({
     priority,
     priorityColor,
     dueDate,
-    status,
     statusColor,
     type
 }) => {
     const IssueIcon = issueTypeIcons[type] || null;
     return (
-        <div className={`p-4 max-w-sm bg-neuralpulse-light-gray rounded-xl shadow-green-glow-md border-l-4 ${statusColor}`}>
+        <div role="article" className={`p-4 max-w-sm bg-neuralpulse-light-gray rounded-xl shadow-green-glow-md border-l-4 ${statusColor}`}>
             <div className="flex items-center mb-2">
-                {IssueIcon && <IssueIcon className="text-xl mr-2 text-neuralpulse-accent" />} {/* Renderiza o ícone se existir */}
+                {IssueIcon && <IssueIcon data-testid={`icon-${type.toLowerCase()}`} className="text-xl mr-2 text-neuralpulse-accent" />}
                 <h2 className="font-bold text-neuralpulse-dark text-xl">{title}</h2>
             </div>
             <p className="text-neuralpulse-dark mb-4">{description}</p>
