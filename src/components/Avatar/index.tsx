@@ -16,6 +16,8 @@ const Avatar: React.FC<AvatarProps> = ({ src, size = 50, name, className }) => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}
+            role="img"
+            aria-label="avatar"
         >
             {!src && initials}
         </div>

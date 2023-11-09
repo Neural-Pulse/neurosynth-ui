@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Story Book
+storybook-static
+
+# Jest
+coverage

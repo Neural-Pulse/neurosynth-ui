@@ -120,6 +120,39 @@ To ensure code quality and consistency, you can run the linter using:
 ```sh
 npm run lint
 ```
+## Components
+- [x] Avatar: A graphical representation of the user, commonly used for profiles and user interfaces.
+- [x] Button: An interactive element that triggers actions when clicked by the user.
+- [x] Card: A flexible and extensible content container with multiple variants and options.
+- [x] Collapse: A component to show and hide content with a smooth animation, enhancing the UI's interactivity.
+- [x] DropdownMenu: A list of options that appears below a clickable element, allowing for additional actions related to an item.
+- [x] IssueCard: A visual summary of an issue, task, or feature that displays its status and other key details.
+- [x] List: A way to display a series of items as a single continuous element, often used for menus and grouped information.
+- [x] Modal: A dialog box/popup window that is displayed on top of the current page for critical user interactions.
+- [x] NestedList: A list with hierarchical items that can expand and collapse, providing a clear structure of the included content.
+- [x] README.md: A markdown file providing documentation about the project and its components.
+- [x] Select: A control that allows the user to choose one or multiple options from a dropdown list.
+- [x] TextField: An input field allowing the user to enter and edit text.
+- [x] Toolbar: The primary navigation bar, providing quick access to features and indicating the user's current context.
+- [x] Warning: A component to display alerts or warnings to the user, often used to highlight potential issues or important information.
+- [x] AppBar: For main navigation, quick access to features, and indication of the user's current context.
+- [x] Tabs: To toggle between different views or sections within the same context, like different panels of information in a project.
+- [x] Tooltip: Small informational messages that appear when hovering over an element, useful for explaining the function of buttons or other interface actions.
+- [x] ProgressBar / Loader: To display the progress of a task or the loading of information, improving user experience during wait times.
+- [ ] Table: A listing of items with multiple columns, essential for visualizing large amounts of data, such as tickets, tasks, or reports.
+- [ ] Pagination: A component for page-by-page navigation, especially useful in tables with lots of data.
+- [ ] Breadcrumbs: To show the navigation path within the application and facilitate returning to previous points.
+- [ ] Tag / Chip: For labeling categories, statuses, people, or any other form of compact and visual metadata.
+- [ ] Dialog / Confirm: Dialogue boxes to confirm critical user actions, such as data deletion or significant changes.
+- [ ] DatePicker: Fundamental for setting deadlines, marking events, and other functionalities related to time.
+- [ ] TimePicker: Similar to the date picker, but for specific times, useful for precise scheduling.
+- [ ] Accordion: To expand and collapse content sections, keeping the interface clean and organized.
+- [ ] Timeline: Shows a timeline of events, change history, or task progress.
+- [ ] Sidebar / Drawer: A side menu that can contain navigation, filters, or additional information.
+- [ ] Snackbar / Toast: For temporary and informative messages that do not require user action to disappear.
+- [ ] EmptyState: A visual representation for when there's no data to display, with instructions or actions for the user.
+- [ ] Stepper: For step-by-step processes, like setup wizards or project creation.
+- [ ] KanbanBoard: A draggable component for visualizing tasks in Kanban style, useful for agile project management.
 
 ## Contributing
 
