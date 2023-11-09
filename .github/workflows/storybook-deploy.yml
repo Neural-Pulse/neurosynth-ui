@@ -1,0 +1,24 @@
+name: Deploy Storybook to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Dependencies
+      run: yarn
+
+    - name: Build Storybook
+      run: yarn build-storybook -- -o ./storybook-static
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: gh-pages
+        folder: storybook-static
+        token: ${{ secrets.GITHUB_TOKEN }}
