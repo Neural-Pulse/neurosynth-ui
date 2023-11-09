@@ -1,0 +1,6 @@
+import"./blocks-2646952b.js";import{j as n}from"./jsx-runtime-ffb262ed.js";import{u as r}from"./index-a1cf9e47.js";import{M as o}from"./index-63dce624.js";import"./index-76fb7be0.js";import"./_commonjsHelpers-de833af9.js";import"./iframe-cc55e1d2.js";import"../sb-preview/runtime.js";import"./index-932496f1.js";import"./index-d37d4223.js";import"./index-356e4a49.js";function s(e){const t=Object.assign({h1:"h1",h2:"h2"},r(),e.components);return n.jsxs(n.Fragment,{children:[n.jsx(o,{title:"Design System/Introduction and Principles"}),`
+`,n.jsx(t.h1,{id:"introduction-and-principles",children:"Introduction and Principles"}),`
+`,n.jsx(t.h2,{id:"mission",children:"Mission"}),`
+`,n.jsx(t.h2,{id:"vision",children:"Vision"}),`
+`,n.jsx(t.h2,{id:"design-principles",children:"Design Principles"})]})}function c(e={}){const{wrapper:t}=Object.assign({},r(),e.components);return t?n.jsx(t,{...e,children:n.jsx(s,{...e})}):s(e)}const a=()=>{throw new Error("Docs-only story")};a.parameters={docsOnly:!0};const i={title:"Design System/Introduction and Principles",tags:["stories-mdx"],includeStories:["__page"]};i.parameters=i.parameters||{};i.parameters.docs={...i.parameters.docs||{},page:c};const D=["__page"];export{D as __namedExportsOrder,a as __page,i as default};
+//# sourceMappingURL=introduction.stories-ca636510.js.map

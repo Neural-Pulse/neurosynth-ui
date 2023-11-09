@@ -1,0 +1,6 @@
+import"./blocks-2646952b.js";import{j as e}from"./jsx-runtime-ffb262ed.js";import{u as s}from"./index-a1cf9e47.js";import{M as i}from"./index-63dce624.js";import"./index-76fb7be0.js";import"./_commonjsHelpers-de833af9.js";import"./iframe-cc55e1d2.js";import"../sb-preview/runtime.js";import"./index-932496f1.js";import"./index-d37d4223.js";import"./index-356e4a49.js";function o(r){const t=Object.assign({h1:"h1",h2:"h2"},s(),r.components);return e.jsxs(e.Fragment,{children:[e.jsx(i,{title:"Design System/Brand Guidelines"}),`
+`,e.jsx(t.h1,{id:"brand-guidelines",children:"Brand Guidelines"}),`
+`,e.jsx(t.h2,{id:"logo-usage",children:"Logo Usage"}),`
+`,e.jsx(t.h2,{id:"color-palette",children:"Color Palette"}),`
+`,e.jsx(t.h2,{id:"typography",children:"Typography"})]})}function a(r={}){const{wrapper:t}=Object.assign({},s(),r.components);return t?e.jsx(t,{...r,children:e.jsx(o,{...r})}):o(r)}const m=()=>{throw new Error("Docs-only story")};m.parameters={docsOnly:!0};const n={title:"Design System/Brand Guidelines",tags:["stories-mdx"],includeStories:["__page"]};n.parameters=n.parameters||{};n.parameters.docs={...n.parameters.docs||{},page:a};const M=["__page"];export{M as __namedExportsOrder,m as __page,n as default};
+//# sourceMappingURL=brand.stories-dd6a3376.js.map
