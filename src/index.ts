@@ -14,3 +14,4 @@ export { default as DropdownMenu } from './components/DropdownMenu';
 export { default as Tabs } from './components/Tabs';
 export { default as AppBar } from './components/AppBar';
 export { default as Tooltip } from './components/Tooltip';
+export { default as ProgressBar } from './components/ProgressBar';
