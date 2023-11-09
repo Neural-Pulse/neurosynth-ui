@@ -29,7 +29,9 @@ const Tooltip: React.FC<TooltipProps> = ({ message, position, children }) => {
         <div className="relative flex items-center" onMouseEnter={showTooltip} onMouseLeave={hideTooltip}>
             {children}
             {isVisible && (
-                <div className={`absolute z-10 ${positionClasses} bg-neuralpulse-dark text-neuralpulse-light-green text-xs rounded py-1 px-3 shadow-md`}>
+                <div
+                    data-testid={`tooltip-${position}`}
+                    className={`absolute z-10 ${positionClasses} bg-neuralpulse-dark text-neuralpulse-light-green text-xs rounded py-1 px-3 shadow-md`}>
                     {message}
                 </div>
             )}
