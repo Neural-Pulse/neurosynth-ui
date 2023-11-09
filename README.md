@@ -136,7 +136,7 @@ npm run lint
 - [x] Toolbar: The primary navigation bar, providing quick access to features and indicating the user's current context.
 - [x] Warning: A component to display alerts or warnings to the user, often used to highlight potential issues or important information.
 - [x] AppBar: For main navigation, quick access to features, and indication of the user's current context.
-- [ ] Tabs: To toggle between different views or sections within the same context, like different panels of information in a project.
+- [x] Tabs: To toggle between different views or sections within the same context, like different panels of information in a project.
 - [ ] Tooltip: Small informational messages that appear when hovering over an element, useful for explaining the function of buttons or other interface actions.
 - [ ] ProgressBar / Loader: To display the progress of a task or the loading of information, improving user experience during wait times.
 - [ ] Table: A listing of items with multiple columns, essential for visualizing large amounts of data, such as tickets, tasks, or reports.
