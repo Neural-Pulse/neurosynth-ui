@@ -13,3 +13,4 @@ export { default as Toolbar } from './components/Toolbar';
 export { default as DropdownMenu } from './components/DropdownMenu';
 export { default as Tabs } from './components/Tabs';
 export { default as AppBar } from './components/AppBar';
+export { default as Tooltip } from './components/Tooltip';

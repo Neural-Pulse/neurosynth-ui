@@ -19,5 +19,5 @@ Default.args = {
 export const WithExtraContent = Template.bind({});
 WithExtraContent.args = {
     ...Default.args,
-    children: <Button variant="text" label="Click me" onClick={() => alert('Botão clicado!')} />
+    children: <Button variant="text" label="Click me" onClick={() => alert('Button clicked')} />
 };
