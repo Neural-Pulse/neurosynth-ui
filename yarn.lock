@@ -3045,7 +3045,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:7.5.3":
+"@storybook/addon-docs@npm:7.5.3, @storybook/addon-docs@npm:^7.5.3":
   version: 7.5.3
   resolution: "@storybook/addon-docs@npm:7.5.3"
   dependencies:
@@ -9552,6 +9552,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "neurosynth-ui@workspace:."
   dependencies:
+    "@storybook/addon-docs": "npm:^7.5.3"
     "@storybook/addon-essentials": "npm:^7.5.3"
     "@storybook/addon-interactions": "npm:^7.5.3"
     "@storybook/addon-links": "npm:^7.5.3"
