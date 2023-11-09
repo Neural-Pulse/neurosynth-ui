@@ -160,6 +160,6 @@ Contributions to NeuroSynthUI are always welcome. Please read the contributing g
 
 ## License
 
-Copyright Neuro Pulse@2023.
+The MIT License (MIT)
 
 ---
