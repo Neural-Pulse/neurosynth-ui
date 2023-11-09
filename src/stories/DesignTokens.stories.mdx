@@ -1,6 +1,5 @@
 import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
 import { ColorPalette, ColorItem } from '@storybook/addon-docs';
-import { tailwindTheme } from './tailwind.config';
 
 <Meta title="Design System/Tokens" />
 
@@ -12,33 +11,17 @@ Design tokens are the visual design atoms of the design system — specifically,
 
 Color tokens are used to ensure consistent color usage across all components and layouts.
 
-<ColorPalette>
-  {Object.entries(tailwindTheme.colors.neuralpulse).map(([name, value]) => (
-    <ColorItem
-      title={name}
-      subtitle={value}
-      colors={[{ value, name }]}
-    />
-  ))}
-</ColorPalette>
 
 ## Typography
 
 Typography tokens are used to keep font styles consistent and accessible.
 
-<TypographyBlock fontFamily="neuralpulse-font" fontWeight="neuralpulse-font-weight" fontSize="neuralpulse-font-size" />
 
 ## Shadows
 
 Shadow tokens are used to create depth in components and interfaces.
 
-<BoxShadowBlock shadows={tailwindTheme.boxShadow} />
 
 ## Borders
 
 Here's how to apply border-radius tokens to UI elements.
-
-```jsx
-<div style={{ borderRadius: tailwindTheme.borderRadius.lg }}>
-  {/* ... */}
-</div>
