@@ -4,7 +4,7 @@ import Avatar from '../Avatar';
 
 const AppBar: React.FC<AppBarProps> = ({ leading, title, user }) => {
     return (
-        <header className="flex justify-between items-center px-4 py-2 bg-neuralpulse-dark shadow-md sm:px-6 lg:px-8">
+        <header className="flex justify-between items-center px-4 py-2 bg-neuralpulse-white shadow-md sm:px-6 lg:px-8">
             <div className="flex items-center">
                 {/* Implementação do botão de menu com acessibilidade */}
                 <button
