@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+
 export interface AppBarProps {
     leading?: ReactNode;
     title?: string;
