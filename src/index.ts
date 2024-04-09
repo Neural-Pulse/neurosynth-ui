@@ -15,3 +15,6 @@ export { default as Tabs } from './components/Tabs';
 export { default as AppBar } from './components/AppBar';
 export { default as Tooltip } from './components/Tooltip';
 export { default as ProgressBar } from './components/ProgressBar';
+export { default as SideBar } from './components/SideBar';
+export { default as SearchBar } from './components/SearchBar';
+export { default as RadioButton } from './components/RadioButton';

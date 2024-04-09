@@ -11,7 +11,7 @@ const Warning: React.FC<WarningProps> = ({ text, variant }) => {
     const variantClass = variantStyles[variant] || variantStyles.warning;
 
     return (
-        <div className={`bg-white text-neuralpulse-dark font-bold p-2 rounded-sm ${variantClass}`}>
+        <div className={`bg-white text-neuralpulse-accent font-bold p-2 rounded-sm ${variantClass}`}>
             {text}
         </div>
     );

@@ -10,7 +10,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ items, label }) => {
         <div className="relative inline-block text-left">
             <button
                 onClick={toggleDropdown}
-                className="text-neuralpulse-dark bg-neuralpulse-light-green rounded-md px-4 py-2 hover:bg-neuralpulse-green"
+                className="text-white bg-neuralpulse-light-green  px-4 py-2 hover:bg-neuralpulse-green"
             >
                 {label}
             </button>

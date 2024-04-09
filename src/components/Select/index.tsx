@@ -7,7 +7,7 @@ const Select: React.FC<SelectProps> = ({ id, label, options, ...rest }) => {
       <label htmlFor={id} className="mb-2 font-bold text-neuralpulse-dark">{label}</label>
       <select
         id={id}
-        className="border border-neuralpulse-gray rounded-sm p-2 focus:outline-none focus:ring-2 focus:ring-neuralpulse-accent shadow-green-glow-md"
+        className="border border-neuralpulse-gray p-2 focus:outline-none focus:ring-neuralpulse-ligh-green shadow-green-glow-md"
         {...rest}
       >
         {options.map((option) => (
