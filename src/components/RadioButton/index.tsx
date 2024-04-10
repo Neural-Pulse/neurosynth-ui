@@ -12,8 +12,12 @@ const RadioButton: React.FC<RadioButtonProps> = ({ id, name, label, checked, onC
         onChange={onChange}
         className="hidden"
       />
-      <span className={`inline-block p-2 rounded-full mr-2 ${checked ? 'bg-neuralpulse-green' : 'bg-neuralpulse-gray'}`}></span>
-      {label}
+      <div className="relative">
+        <div className={`w-8 h-8 border border-gray-400 rounded-full mr-2 flex items-center justify-center ${checked ? 'bg-transparent border-transparent' : 'bg-transparent'}`}>
+          {checked && <div className="w-4 h-4 bg-neuralpulse-green rounded-full"></div>}
+        </div>
+      </div>
+      <span>{label}</span>
     </label>
   );
 };
