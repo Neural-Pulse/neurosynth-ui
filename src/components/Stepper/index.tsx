@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { StepperProps, StepProps } from './Stepper.types';
 
-const Step: React.FC<StepProps> = ({ label, index, isActive }) => {
+const Step: React.FC<StepProps & { isActive: boolean }> = ({ label, isActive }) => {
     const activeClass = isActive ? 'bg-neuralpulse-green text-white' : 'bg-neuralpulse-gray text-neuralpulse-dark';
     return (
         <div className={`px-4 py-2 rounded-full ${activeClass}`}>
-            {index + 1}. {label}
+            {label}
         </div>
     );
 };
@@ -29,7 +29,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, initialStep = 0 }) => {
         <div>
             <div className="flex space-x-4 mb-4">
                 {steps.map((step, index) => (
-                    <Step key={index} label={step.label} index={index} isActive={index === currentStep} />
+                    <Step key={index} label={step.label} isActive={index === currentStep} />
                 ))}
             </div>
             <div>
