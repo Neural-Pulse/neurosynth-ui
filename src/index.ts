@@ -30,3 +30,4 @@ export { default as Accordion } from './components/Accordion';
 export { default as Snackbar } from './components/Snackbar';
 export { default as EmptyState } from './components/EmptyState';
 export { default as Stepper } from './components/Stepper';
+export { default as Board } from './components/Board'
