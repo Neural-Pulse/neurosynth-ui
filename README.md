@@ -139,7 +139,7 @@ npm run lint
 - [x] Tabs: To toggle between different views or sections within the same context, like different panels of information in a project.
 - [x] Tooltip: Small informational messages that appear when hovering over an element, useful for explaining the function of buttons or other interface actions.
 - [x] ProgressBar / Loader: To display the progress of a task or the loading of information, improving user experience during wait times.
-- [ ] Table: A listing of items with multiple columns, essential for visualizing large amounts of data, such as tickets, tasks, or reports.
+- [x] Table: A listing of items with multiple columns, essential for visualizing large amounts of data, such as tickets, tasks, or reports.
 - [x] Pagination: A component for page-by-page navigation, especially useful in tables with lots of data.
 - [ ] Breadcrumbs: To show the navigation path within the application and facilitate returning to previous points.
 - [ ] Tag / Chip: For labeling categories, statuses, people, or any other form of compact and visual metadata.
