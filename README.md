@@ -143,7 +143,7 @@ npm run lint
 - [x] Pagination: A component for page-by-page navigation, especially useful in tables with lots of data.
 - [x] Breadcrumbs: To show the navigation path within the application and facilitate returning to previous points.
 - [x] Tag / Chip: For labeling categories, statuses, people, or any other form of compact and visual metadata.
-- [ ] Dialog / Confirm: Dialogue boxes to confirm critical user actions, such as data deletion or significant changes.
+- [x] Dialog / Confirm: Dialogue boxes to confirm critical user actions, such as data deletion or significant changes.
 - [ ] DatePicker: Fundamental for setting deadlines, marking events, and other functionalities related to time.
 - [ ] TimePicker: Similar to the date picker, but for specific times, useful for precise scheduling.
 - [ ] Accordion: To expand and collapse content sections, keeping the interface clean and organized.
