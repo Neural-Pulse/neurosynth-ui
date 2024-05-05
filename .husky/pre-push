@@ -1,0 +1,2 @@
+#!/bin/sh
+yarn build-storybook && yarn test:full && yarn build
