@@ -142,7 +142,7 @@ npm run lint
 - [x] Table: A listing of items with multiple columns, essential for visualizing large amounts of data, such as tickets, tasks, or reports.
 - [x] Pagination: A component for page-by-page navigation, especially useful in tables with lots of data.
 - [x] Breadcrumbs: To show the navigation path within the application and facilitate returning to previous points.
-- [ ] Tag / Chip: For labeling categories, statuses, people, or any other form of compact and visual metadata.
+- [x] Tag / Chip: For labeling categories, statuses, people, or any other form of compact and visual metadata.
 - [ ] Dialog / Confirm: Dialogue boxes to confirm critical user actions, such as data deletion or significant changes.
 - [ ] DatePicker: Fundamental for setting deadlines, marking events, and other functionalities related to time.
 - [ ] TimePicker: Similar to the date picker, but for specific times, useful for precise scheduling.
