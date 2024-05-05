@@ -19,7 +19,9 @@ jobs:
           scope: "@Neural-Pulse"
 
       - name: Create .npmrc
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+        run: |
+          echo "@neuralpulse:registry=https://registry.npmjs.org/" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
 
       - name: Install Dependencies
         run: npm install
