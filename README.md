@@ -151,7 +151,7 @@ npm run lint
 - [x] Sidebar / Drawer: A side menu that can contain navigation, filters, or additional information.
 - [x] Snackbar / Toast: For temporary and informative messages that do not require user action to disappear.
 - [x] EmptyState: A visual representation for when there's no data to display, with instructions or actions for the user.
-- [ ] Stepper: For step-by-step processes, like setup wizards or project creation.
+- [x] Stepper: For step-by-step processes, like setup wizards or project creation.
 - [ ] KanbanBoard: A draggable component for visualizing tasks in Kanban style, useful for agile project management.
 
 ## Contributing
