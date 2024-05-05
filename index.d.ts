@@ -18,3 +18,4 @@ export { default as ProgressBar } from './components/ProgressBar';
 export { default as SideBar } from './components/SideBar';
 export { default as SearchBar } from './components/SearchBar';
 export { default as RadioButton } from './components/RadioButton';
+export { default as PasswordField } from './components/PasswordField';

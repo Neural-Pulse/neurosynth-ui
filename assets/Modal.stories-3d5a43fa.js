@@ -1,0 +1,4 @@
+import{j as r}from"./jsx-runtime-ffb262ed.js";import{r as l}from"./index-76fb7be0.js";import{M as a}from"./index-1ebacc3f.js";import"./_commonjsHelpers-de833af9.js";const O={title:"Components/Modal",component:a},c=n=>{const[p,i]=l.useState(!0);return r.jsx(a,{...n,isOpen:p,onClose:()=>i(!1)})},e=c.bind({});e.args={title:"Modal Title",children:r.jsx("p",{children:"This is a modal component using the custom Tailwind colors."})};var s,t,o;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`args => {
+  const [isOpen, setIsOpen] = useState(true);
+  return <Modal {...args} isOpen={isOpen} onClose={() => setIsOpen(false)} />;
+}`,...(o=(t=e.parameters)==null?void 0:t.docs)==null?void 0:o.source}}};const x=["Default"];export{e as Default,x as __namedExportsOrder,O as default};
