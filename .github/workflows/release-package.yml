@@ -10,19 +10,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "21.7.2"
           registry-url: "https://registry.npmjs.org/"
           scope: "@Neural-Pulse"
+
+      - name: Create .npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+
       - name: Install Dependencies
-        run: yarn install
+        run: npm install
+
       - name: Run Tests
-        run: yarn test
+        run: npm test
+
       - name: Build
-        run: yarn build
+        run: npm run build
+
       - name: Publish to npm
-        run: yarn publish --non-interactive --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public
+
