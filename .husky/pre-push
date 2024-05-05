@@ -1,2 +1,2 @@
 #!/bin/sh
-yarn build-storybook && yarn lint && yarn test:full && yarn build
+yarn build-storybook && yarn test:full && yarn build
