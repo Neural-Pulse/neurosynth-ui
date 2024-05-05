@@ -1,5 +1,5 @@
 {
-  "name": "@neural-pulse/neurosynth-ui",
+  "name": "@neuralpulse/neurosynth-ui",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
