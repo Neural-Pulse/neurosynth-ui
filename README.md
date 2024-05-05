@@ -145,7 +145,7 @@ npm run lint
 - [x] Tag / Chip: For labeling categories, statuses, people, or any other form of compact and visual metadata.
 - [x] Dialog / Confirm: Dialogue boxes to confirm critical user actions, such as data deletion or significant changes.
 - [x] DatePicker: Fundamental for setting deadlines, marking events, and other functionalities related to time.
-- [ ] TimePicker: Similar to the date picker, but for specific times, useful for precise scheduling.
+- [x] TimePicker: Similar to the date picker, but for specific times, useful for precise scheduling.
 - [ ] Accordion: To expand and collapse content sections, keeping the interface clean and organized.
 - [ ] Timeline: Shows a timeline of events, change history, or task progress.
 - [ ] Sidebar / Drawer: A side menu that can contain navigation, filters, or additional information.

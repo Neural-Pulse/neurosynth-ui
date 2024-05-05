@@ -25,3 +25,4 @@ export { default as Breadcrumbs } from './components/Breadcrumbs';
 export { default as Tag } from './components/Tag'
 export { default as Dialog } from './components/Dialog'
 export { default as DatePicker } from './components/DatePicker'
+export { default as TimePicker } from './components/TimePicker'
