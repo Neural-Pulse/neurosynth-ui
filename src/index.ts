@@ -21,3 +21,4 @@ export { default as RadioButton } from './components/RadioButton';
 export { default as PasswordField } from './components/PasswordField'
 export { default as Pagination } from './components/Pagination';
 export { default as Table } from './components/Table';
+export { default as Breadcrumbs } from './components/Breadcrumbs'
