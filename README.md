@@ -141,7 +141,7 @@ npm run lint
 - [x] ProgressBar / Loader: To display the progress of a task or the loading of information, improving user experience during wait times.
 - [x] Table: A listing of items with multiple columns, essential for visualizing large amounts of data, such as tickets, tasks, or reports.
 - [x] Pagination: A component for page-by-page navigation, especially useful in tables with lots of data.
-- [ ] Breadcrumbs: To show the navigation path within the application and facilitate returning to previous points.
+- [x] Breadcrumbs: To show the navigation path within the application and facilitate returning to previous points.
 - [ ] Tag / Chip: For labeling categories, statuses, people, or any other form of compact and visual metadata.
 - [ ] Dialog / Confirm: Dialogue boxes to confirm critical user actions, such as data deletion or significant changes.
 - [ ] DatePicker: Fundamental for setting deadlines, marking events, and other functionalities related to time.
