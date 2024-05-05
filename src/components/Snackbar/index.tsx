@@ -12,8 +12,13 @@ const Snackbar: React.FC<SnackbarProps> = ({ message, duration = 3000, onClose }
             }
         }, duration);
 
-        return () => clearTimeout(timer);
-    }, [duration, onClose]);
+        return () => {
+            clearTimeout(timer);
+            if (isVisible && onClose) {
+                onClose();
+            }
+        };
+    }, [duration, onClose, isVisible]);
 
     if (!isVisible) return null;
 
