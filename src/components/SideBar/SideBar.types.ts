@@ -9,4 +9,5 @@ export interface SideBarItem {
 export interface SideBarProps {
   items: SideBarItem[];
   children?: React.ReactNode;
+  isOpen?: boolean;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import { SideBarProps } from './SideBar.types';
 
-const SideBar: React.FC<SideBarProps> = ({ children, items }) => {
+const SideBar: React.FC<SideBarProps> = ({ children, items, isOpen }) => {
   return (
-    <aside className="w-64 bg-neuralpulse-white text-neuralpulse-green shadow-green-glow-md">
+    <aside className={`w-64 bg-neuralpulse-white text-neuralpulse-green shadow-green-glow-md ${isOpen ? 'block' : 'hidden'}`}>
       <div className="py-4 px-6">
         <h2 className="text-2xl font-bold text-neuralpulse-green">Sidebar</h2>
       </div>
