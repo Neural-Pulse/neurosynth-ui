@@ -24,13 +24,13 @@ To get started with NeuroSynthUI, you need to have Node.js installed on your sys
 You can install NeuroSynthUI in your project by running the following command:
 
 ```sh
-npm install neurosynth-ui
+npm i @neuralpulse/neurosynth-ui
 ```
 
 or if you are using `yarn`:
 
 ```sh
-yarn add neurosynth-ui
+yarn add @neuralpulse/neurosynth-ui
 ```
 
 ### Usage
