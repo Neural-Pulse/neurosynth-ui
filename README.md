@@ -148,7 +148,7 @@ npm run lint
 - [x] TimePicker: Similar to the date picker, but for specific times, useful for precise scheduling.
 - [x] Accordion: To expand and collapse content sections, keeping the interface clean and organized.
 - [x] Timeline: Shows a timeline of events, change history, or task progress.
-- [x] Sidebar / Drawer: A side menu that can contain navigation, filters, or additional information.
+- [x] Sidebar: A side menu that can contain navigation, filters, or additional information.
 - [x] Snackbar / Toast: For temporary and informative messages that do not require user action to disappear.
 - [x] EmptyState: A visual representation for when there's no data to display, with instructions or actions for the user.
 - [x] Stepper: For step-by-step processes, like setup wizards or project creation.

@@ -10,24 +10,24 @@ describe('SideBar', () => {
   ];
 
   it('renders the sidebar with the correct title', () => {
-    render(<SideBar items={items} />);
+    render(<SideBar items={items}>Children Content</SideBar>);
     expect(screen.getByText('Sidebar')).toBeDefined();
   });
 
   it('renders the correct number of sidebar items', () => {
-    render(<SideBar items={items} />);
+    render(<SideBar items={items}>Children Content</SideBar>);
     expect(screen.getAllByRole('button')).toHaveLength(items.length);
   });
 
   it('renders the sidebar items with the correct labels', () => {
-    render(<SideBar items={items} />);
+    render(<SideBar items={items}>Children Content</SideBar>);
     items.forEach((item) => {
       expect(screen.getByText(item.label)).toBeDefined();
     });
   });
 
   it('calls the onClick function when a sidebar item is clicked', () => {
-    render(<SideBar items={items} />);
+    render(<SideBar items={items}>Children Content</SideBar>);
     const homeButton = screen.getByText('Home');
     fireEvent.click(homeButton);
     expect(items[0].onClick).toHaveBeenCalledTimes(1);

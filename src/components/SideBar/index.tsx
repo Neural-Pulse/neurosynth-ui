@@ -1,7 +1,7 @@
 import React from 'react';
 import { SideBarProps } from './SideBar.types';
 
-const SideBar: React.FC<SideBarProps> = ({ items }) => {
+const SideBar: React.FC<SideBarProps> = ({ children, items }) => {
   return (
     <aside className="w-64 bg-neuralpulse-white text-neuralpulse-green shadow-green-glow-md">
       <div className="py-4 px-6">
@@ -22,6 +22,7 @@ const SideBar: React.FC<SideBarProps> = ({ items }) => {
           ))}
         </ul>
       </nav>
+      {children}
     </aside>
   );
 };
