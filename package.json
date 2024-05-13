@@ -15,7 +15,7 @@
     "build-storybook": "storybook build",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:full": "jest --coverage"
+    "test:full": "jest --clearCache && jest --runInBand --coverage"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -34,7 +34,7 @@
     "@storybook/react": "^7.5.3",
     "@storybook/react-vite": "^7.5.3",
     "@storybook/testing-library": "^0.2.2",
-    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.5.1",
     "@types/jest": "^29.5.7",
