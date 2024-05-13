@@ -1,36 +1,43 @@
+// SideBar.stories.tsx
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
-import { FiHome, FiUser, FiSettings } from 'react-icons/fi';
-import Sidebar from '.';
+import { MdHome, MdSettings } from 'react-icons/md';
+import SideBar from './';
 
 export default {
-  title: 'Components/Sidebar',
-  component: Sidebar,
-} as Meta<typeof Sidebar>;
+  title: 'Components/SideBar',
+  component: SideBar,
+} as Meta<typeof SideBar>;
 
-const Template: StoryFn<typeof Sidebar> = (args) => (
-  <Sidebar {...args}>
-    {/* Adicione seu conteúdo aqui */}
-    <div>Children Content</div>
-  </Sidebar>
-);
+const Template: StoryFn<typeof SideBar> = (args) => <SideBar {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Primary = Template.bind({});
+Primary.args = {
+  isOpen: true,
   items: [
-    { label: 'Home', icon: FiHome, onClick: () => console.log('Clicked on Home') },
-    { label: 'Profile', icon: FiUser, onClick: () => console.log('Clicked on Profile') },
-    { label: 'Settings', icon: FiSettings, onClick: () => console.log('Clicked on Settings') },
+    { label: 'Home', icon: MdHome, onClick: () => console.log('Home clicked') },
   ],
 };
 
-export const WithMoreItems = Template.bind({});
-WithMoreItems.args = {
+export const MultipleItems = Template.bind({});
+MultipleItems.args = {
+  isOpen: true,
   items: [
-    { label: 'Home', icon: FiHome, onClick: () => console.log('Clicked on Home') },
-    { label: 'Profile', icon: FiUser, onClick: () => console.log('Clicked on Profile') },
-    { label: 'Settings', icon: FiSettings, onClick: () => console.log('Clicked on Settings') },
-    { label: 'Dashboard', icon: FiHome, onClick: () => console.log('Clicked on Dashboard') },
-    { label: 'Messages', icon: FiUser, onClick: () => console.log('Clicked on Messages') },
+    { label: 'Home', icon: MdHome, onClick: () => console.log('Home clicked') },
+    { label: 'Settings', icon: MdSettings, onClick: () => console.log('Settings clicked') },
+  ],
+};
+
+export const CustomTheme = Template.bind({});
+CustomTheme.args = {
+  isOpen: true,
+  theme: {
+    background: 'bg-blue-500',
+    textColor: 'text-yellow-500',
+    hoverBackgroundColor: 'hover:bg-red-500',
+    focusOutline: 'focus:outline-none',
+  },
+  items: [
+    { label: 'Home', icon: MdHome, onClick: () => console.log('Home clicked') },
   ],
 };
