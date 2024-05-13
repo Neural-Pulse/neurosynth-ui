@@ -1,5 +1,3 @@
-import { ReactElement } from 'react';
-
 export interface SideBarItem {
   label: string;
   icon: React.ElementType;
