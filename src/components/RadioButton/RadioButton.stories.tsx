@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Story, Meta } from '@storybook/react';
-import RadioButton from '.';
-import { RadioButtonProps } from './RadioButton.types';
+import React, { useState } from "react";
+import { Story, Meta } from "@storybook/react";
+import RadioButton from ".";
+import { RadioButtonProps } from "./RadioButton.types";
 
 export default {
-  title: 'Components/RadioButton',
+  title: "Components/RadioButton",
   component: RadioButton,
 } as Meta;
 
@@ -23,7 +23,7 @@ const InteractiveTemplate: Story<RadioButtonProps> = (args) => {
 
 export const Interactive = InteractiveTemplate.bind({});
 Interactive.args = {
-  id: 'radio1',
-  name: 'radioGroup',
-  label: 'Option 1',
+  id: "radio1",
+  name: "radioGroup",
+  label: "Option 1",
 };
