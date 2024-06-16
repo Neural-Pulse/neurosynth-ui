@@ -1,6 +1,6 @@
 {
   "name": "@neuralpulse/neurosynth-ui",
-  "version": "1.17.0",
+  "version": "1.32.0",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
