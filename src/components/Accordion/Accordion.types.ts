@@ -1,15 +1,10 @@
-import { ReactNode } from 'react';
-
 export interface AccordionItemProps {
     title: string;
-    children: ReactNode;
+    children: React.ReactNode;
     isOpenInitially?: boolean;
 }
 
 export interface AccordionProps {
-    items: Array<{
-        title: string;
-        content: ReactNode;
-        isOpenInitially?: boolean;
-    }>;
+    items: { title: string; content: React.ReactNode; isOpenInitially?: boolean }[];
+    className?: string;
 }
