@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { IssueCardProps } from './IssueCard.types';
 import { FaBug, FaRocket, FaTasks } from 'react-icons/fa';
 import { IconType } from 'react-icons';
@@ -36,4 +36,4 @@ const IssueCard: React.FC<IssueCardProps> = ({
     );
 };
 
-export default IssueCard;
+export default memo(IssueCard);

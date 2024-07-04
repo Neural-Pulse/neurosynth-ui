@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react';
+import React, { ChangeEvent, memo } from 'react';
 import { SearchBarProps } from './SearchBar.types';
 import { FiSearch } from 'react-icons/fi';
 
@@ -30,4 +30,4 @@ const SearchBar: React.FC<SearchBarProps> = ({ value, onChange, onSearch, placeh
   );
 };
 
-export default SearchBar;
+export default memo(SearchBar);

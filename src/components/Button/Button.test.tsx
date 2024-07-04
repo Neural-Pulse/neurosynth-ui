@@ -20,6 +20,7 @@ describe('Button', () => {
     it('has the correct class for the contained variant', () => {
         render(<Button label={label} onClick={handleClick} variant="contained" />);
         expect(screen.getByText(label)).toHaveClass('bg-neuralpulse-green');
+        expect(screen.getByText(label)).toHaveClass('text-white');
         expect(screen.getByText(label)).toHaveClass('hover:bg-neuralpulse-gray');
     });
 

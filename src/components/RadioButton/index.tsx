@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { RadioButtonProps } from './RadioButton.types';
 
 const RadioButton: React.FC<RadioButtonProps> = ({ id, name, label, checked, onChange }) => {
@@ -22,4 +22,4 @@ const RadioButton: React.FC<RadioButtonProps> = ({ id, name, label, checked, onC
   );
 };
 
-export default RadioButton;
+export default memo(RadioButton);

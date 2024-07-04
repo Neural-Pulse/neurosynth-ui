@@ -1,27 +1,16 @@
-import React from 'react';
+import React, { memo } from 'react';
+import clsx from 'clsx';
 import { AvatarProps } from './Avatar.types';
 
-const Avatar: React.FC<AvatarProps> = ({ src, size = 50, name, className }) => {
-    const initials = name?.split(' ').map((n) => n[0]).join('');
-
+const Avatar: React.FC<AvatarProps> = ({ src, name, size = 40, className }) => {
     return (
-        <div
-            className={`flex items-center justify-center rounded-full shadow-green-glow-md text-neuralpulse-green font-semibold ${className}`
-            }
-            style={{
-                width: size,
-                height: size,
-                backgroundColor: src ? 'transparent' : '#E0E0E0',
-                backgroundImage: src ? `url(${src})` : undefined,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-            }}
-            role="img"
-            aria-label="avatar"
-        >
-            {!src && initials}
-        </div>
+        <img
+            src={src}
+            alt={`${name} avatar`}
+            className={clsx('rounded-full', className)}
+            style={{ width: size, height: size }}
+        />
     );
 };
 
-export default Avatar;
+export default memo(Avatar);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { NestedListProps } from './NestedList.types';
 
 const NestedList: React.FC<NestedListProps> = ({ items }) => {
@@ -23,4 +23,4 @@ const NestedList: React.FC<NestedListProps> = ({ items }) => {
     );
 };
 
-export default NestedList;
+export default memo(NestedList);

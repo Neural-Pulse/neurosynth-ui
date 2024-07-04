@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { ButtonProps } from './Button.types';
 
 const Button: React.FC<ButtonProps> = ({ label, onClick, variant }) => {
@@ -25,4 +25,4 @@ const Button: React.FC<ButtonProps> = ({ label, onClick, variant }) => {
     );
 };
 
-export default Button;
+export default memo(Button);

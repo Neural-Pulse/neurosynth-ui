@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { BreadcrumbsProps } from './Breadcrumbs.types';
 import { Link } from 'react-router-dom'; // Assuming you're using react-router for navigation
 
@@ -23,4 +23,4 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ crumbs }) => {
     );
 };
 
-export default Breadcrumbs;
+export default memo(Breadcrumbs);

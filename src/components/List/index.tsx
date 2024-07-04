@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { ListProps } from './List.types';
 
 const List: React.FC<ListProps> = ({ items, onItemClick }) => {
@@ -17,4 +17,4 @@ const List: React.FC<ListProps> = ({ items, onItemClick }) => {
     );
 };
 
-export default List;
+export default memo(List);

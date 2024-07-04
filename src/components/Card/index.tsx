@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { CardProps } from './Card.types';
 
 const Card: React.FC<CardProps> = ({ title, text }) => {
@@ -10,4 +10,4 @@ const Card: React.FC<CardProps> = ({ title, text }) => {
     );
 };
 
-export default Card;
+export default memo(Card);

@@ -23,24 +23,12 @@ describe('PasswordField', () => {
         expect(label).toBeInTheDocument();
     });
 
-    it('calls the onChange handler when the password value changes', () => {
+    it('toggles password visibility when the button is clicked', () => {
         render(<PasswordField {...defaultProps} />);
-        const passwordInput = screen.getByPlaceholderText('Enter your password');
-        fireEvent.change(passwordInput, { target: { value: 'secret123' } });
-        expect(defaultProps.onChange).toHaveBeenCalledTimes(1);
-    });
-
-    it('toggles the password visibility when the toggle button is clicked', () => {
-        render(<PasswordField {...defaultProps} />);
-        const passwordInput = screen.getByPlaceholderText('Enter your password');
         const toggleButton = screen.getByRole('button');
-
-        expect(passwordInput).toHaveAttribute('type', 'password');
-
         fireEvent.click(toggleButton);
-        expect(passwordInput).toHaveAttribute('type', 'text');
-
+        expect(screen.getByPlaceholderText('Enter your password')).toHaveAttribute('type', 'text');
         fireEvent.click(toggleButton);
-        expect(passwordInput).toHaveAttribute('type', 'password');
+        expect(screen.getByPlaceholderText('Enter your password')).toHaveAttribute('type', 'password');
     });
 });

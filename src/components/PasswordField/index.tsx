@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState, memo } from 'react';
 import { PasswordFieldProps } from './PasswordField.types';
 
 const PasswordField: React.FC<PasswordFieldProps> = ({
@@ -17,11 +17,7 @@ const PasswordField: React.FC<PasswordFieldProps> = ({
 
     return (
         <div className="mb-4">
-            {label && (
-                <label htmlFor={id} className="block text-neuralpulse-dark text-sm font-bold mb-2">
-                    {label}
-                </label>
-            )}
+            {label && <label htmlFor={id} className="block text-neuralpulse-dark mb-2">{label}</label>}
             <div className="relative">
                 <input
                     id={id}
@@ -53,4 +49,4 @@ const PasswordField: React.FC<PasswordFieldProps> = ({
     );
 };
 
-export default PasswordField;
+export default memo(PasswordField);
