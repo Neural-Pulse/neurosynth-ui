@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AccordionProps, AccordionItemProps } from './Accordion.types';
+import clsx from 'clsx';
 
 const AccordionItem: React.FC<AccordionItemProps> = ({ title, children, isOpenInitially = false }) => {
     const [isOpen, setIsOpen] = useState(isOpenInitially);
@@ -9,13 +10,16 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children, isOpenIn
     return (
         <div className="border-b border-neuralpulse-gray">
             <button
-                className="py-2 px-4 w-full text-left text-neuralpulse-dark bg-neuralpulse-gray hover:bg-neuralpulse-light-green font-bold"
+                className="py-2 px-4 w-full text-left text-neuralpulse-dark bg-neuralpulse-gray hover:bg-neuralpulse-light-green font-bold flex justify-between items-center"
                 onClick={toggleOpen}
+                aria-expanded={isOpen}
+                aria-controls={title.replace(/\s+/g, '-').toLowerCase()}
             >
-                {title}
+                <span>{title}</span>
+                <span>{isOpen ? '-' : '+'}</span> {/* Icone que indica o estado */}
             </button>
             {isOpen && (
-                <div className="p-4">
+                <div id={title.replace(/\s+/g, '-').toLowerCase()} className="p-4 transition-all duration-300">
                     {children}
                 </div>
             )}
@@ -23,9 +27,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children, isOpenIn
     );
 };
 
-const Accordion: React.FC<AccordionProps> = ({ items }) => {
+const Accordion: React.FC<AccordionProps> = ({ items, className }) => {
     return (
-        <div className="divide-y divide-neuralpulse-gray">
+        <div className={clsx('divide-y divide-neuralpulse-gray', className)}>
             {items.map((item, index) => (
                 <AccordionItem key={index} title={item.title} isOpenInitially={item.isOpenInitially}>
                     {item.content}

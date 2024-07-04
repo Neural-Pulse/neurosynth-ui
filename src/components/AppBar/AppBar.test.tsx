@@ -17,12 +17,18 @@ describe('AppBar', () => {
         render(<AppBar title="NeuralPulse Dashboard" user={userInfo} />);
         expect(screen.getByText(userInfo.name)).toBeInTheDocument();
 
-        // This test assumes you are using an actual <img> element within your Avatar component
         const avatarImage = screen.getByRole('img', { name: /avatar/i });
         expect(avatarImage).toBeInTheDocument();
+    });
 
-        // If using a background image in a div, this part of the test won't work as expected
-        // You can instead check for inline styles or skip checking the src directly if it's not set on an <img> tag
-        // expect(avatarImage).toHaveAttribute('src', userInfo.avatar);
+    it('renders without leading element', () => {
+        render(<AppBar title="NeuralPulse Dashboard" />);
+        expect(screen.queryByRole('button')).not.toBeInTheDocument();
+    });
+
+    it('renders without user information', () => {
+        render(<AppBar title="NeuralPulse Dashboard" />);
+        expect(screen.queryByText(userInfo.name)).not.toBeInTheDocument();
+        expect(screen.queryByRole('img', { name: /avatar/i })).not.toBeInTheDocument();
     });
 });

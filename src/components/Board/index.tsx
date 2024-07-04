@@ -1,8 +1,8 @@
-import React from 'react';
-import { BoardProps, ColumnProps, Item } from './Board.types';
+import React, { memo } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import { BoardProps, ColumnProps, Item } from './Board.types';
 
-const Column: React.FC<ColumnProps> = ({ column, index }) => {
+const Column: React.FC<ColumnProps> = memo(({ column, index }) => {
     return (
         <Draggable draggableId={column.id} index={index}>
             {(provided) => (
@@ -31,7 +31,7 @@ const Column: React.FC<ColumnProps> = ({ column, index }) => {
             )}
         </Draggable>
     );
-};
+});
 
 const Board: React.FC<BoardProps> = ({ columns, onDragEnd }) => {
     return (
@@ -54,4 +54,4 @@ const Board: React.FC<BoardProps> = ({ columns, onDragEnd }) => {
     );
 };
 
-export default Board;
+export default memo(Board);

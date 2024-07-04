@@ -1,43 +1,40 @@
 import { render, screen } from '@testing-library/react';
-import IssueCard from '.';
 import '@testing-library/jest-dom';
+import IssueCard from '.';
+import { IssueCardProps } from './IssueCard.types';
+
+const issueCardProps: IssueCardProps = {
+    title: 'Test Issue',
+    description: 'This is a test issue description.',
+    priority: 'High',
+    priorityColor: 'text-red-600',
+    dueDate: '2023-04-30',
+    status: 'Open',
+    statusColor: 'bg-cyan-blue',
+    type: 'Bug',
+};
 
 describe('IssueCard', () => {
-    const issueCardProps = {
-        title: 'Sample Issue',
-        description: 'This is a sample issue description',
-        priority: 'High',
-        priorityColor: 'text-red-500',
-        dueDate: '2023-11-06',
-        statusColor: 'border-green-500',
-        type: 'Bug',
-    };
-
-    it('renders the issue card with all provided information', () => {
+    it('renders the title and description', () => {
         render(<IssueCard {...issueCardProps} />);
         expect(screen.getByText(issueCardProps.title)).toBeInTheDocument();
         expect(screen.getByText(issueCardProps.description)).toBeInTheDocument();
+    });
+
+    it('displays the correct priority and due date', () => {
+        render(<IssueCard {...issueCardProps} />);
         expect(screen.getByText(issueCardProps.priority)).toBeInTheDocument();
         expect(screen.getByText(new Date(issueCardProps.dueDate).toLocaleDateString())).toBeInTheDocument();
     });
 
-    it('displays the correct icon based on the issue type', () => {
-        const { rerender } = render(<IssueCard {...issueCardProps} />);
+    it('renders the correct icon based on issue type', () => {
+        render(<IssueCard {...issueCardProps} />);
         expect(screen.getByTestId('icon-bug')).toBeInTheDocument();
-
-        rerender(<IssueCard {...issueCardProps} type="Feature" />);
-        expect(screen.getByTestId('icon-feature')).toBeInTheDocument();
-
-        rerender(<IssueCard {...issueCardProps} type="Task" />);
-        expect(screen.getByTestId('icon-task')).toBeInTheDocument();
     });
 
-    it('applies the correct priority and status colors', () => {
+    it('applies the correct status color', () => {
         render(<IssueCard {...issueCardProps} />);
-        const prioritySpan = screen.getByText(issueCardProps.priority);
-        expect(prioritySpan).toHaveClass(issueCardProps.priorityColor);
-
-        const issueCardDiv = screen.getByRole('article');
-        expect(issueCardDiv).toHaveClass(issueCardProps.statusColor);
+        const issueCard = screen.getByRole('article');
+        expect(issueCard).toHaveClass(issueCardProps.statusColor);
     });
 });

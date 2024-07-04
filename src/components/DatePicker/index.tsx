@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import { DatePickerProps } from './DatePicker.types';
 
 const DatePicker: React.FC<DatePickerProps> = ({ value, onChange }) => {
@@ -21,4 +21,4 @@ const DatePicker: React.FC<DatePickerProps> = ({ value, onChange }) => {
     );
 };
 
-export default DatePicker;
+export default memo(DatePicker);

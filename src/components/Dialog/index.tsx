@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { DialogProps } from './Dialog.types';
 
 const Dialog: React.FC<DialogProps> = ({ isOpen, onClose, onConfirm, title, children }) => {
@@ -22,4 +22,4 @@ const Dialog: React.FC<DialogProps> = ({ isOpen, onClose, onConfirm, title, chil
     );
 };
 
-export default Dialog;
+export default memo(Dialog);

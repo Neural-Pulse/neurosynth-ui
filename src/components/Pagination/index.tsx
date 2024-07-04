@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { PaginationProps } from './Pagination.types';
 
 const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPageChange }) => {
@@ -22,4 +22,4 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
     );
 };
 
-export default Pagination;
+export default memo(Pagination);
