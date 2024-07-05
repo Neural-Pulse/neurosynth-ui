@@ -8,12 +8,14 @@ describe('SideBar', () => {
     { label: 'Settings', icon: MdSettings, onClick: jest.fn() }
   ];
 
+  const onClose = jest.fn();
+
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
   it('should render sidebar with provided items', () => {
-    render(<SideBar isOpen={true} items={items} />);
+    render(<SideBar isOpen={true} items={items} onClose={onClose} />);
     expect(screen.getByText('Home')).toBeInTheDocument();
     expect(screen.getByText('Settings')).toBeInTheDocument();
   });

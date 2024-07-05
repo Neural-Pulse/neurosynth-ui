@@ -1,4 +1,3 @@
-// SideBar.stories.tsx
 import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
 import { MdHome, MdSettings } from "react-icons/md";
@@ -14,6 +13,7 @@ const Template: StoryFn<typeof SideBar> = (args) => <SideBar {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   isOpen: true,
+  onClose: () => console.log("Sidebar closed"),
   items: [
     { label: "Home", icon: MdHome, onClick: () => console.log("Home clicked") },
   ],
@@ -22,6 +22,7 @@ Primary.args = {
 export const MultipleItems = Template.bind({});
 MultipleItems.args = {
   isOpen: true,
+  onClose: () => console.log("Sidebar closed"),
   items: [
     { label: "Home", icon: MdHome, onClick: () => console.log("Home clicked") },
     {
@@ -35,6 +36,7 @@ MultipleItems.args = {
 export const CustomTheme = Template.bind({});
 CustomTheme.args = {
   isOpen: true,
+  onClose: () => console.log("Sidebar closed"),
   theme: {
     background: "bg-blue-500",
     textColor: "text-yellow-500",
