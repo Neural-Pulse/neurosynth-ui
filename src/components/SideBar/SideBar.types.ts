@@ -14,6 +14,7 @@ export interface Theme {
 export interface SideBarProps {
   items: SideBarItem[];
   isOpen: boolean;
+  onClose: () => void;
   theme?: Theme;
   className?: string;
   itemClassName?: string;
